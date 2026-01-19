@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Sagar Hossain | PhD Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --sidebar-bg: #1a252f;
+            --accent: #3498db;
+            --text-main: #333;
+            --bg-light: #f8f9fa;
+        }
+        body { font-family: 'Inter', sans-serif; margin: 0; display: flex; background: var(--bg-light); color: var(--text-main); line-height: 1.6; }
+        
+        /* Layout */
+        .sidebar { width: 300px; background: var(--sidebar-bg); color: white; height: 100vh; position: fixed; padding: 2rem; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .main-content { margin-left: 300px; padding: 3rem; width: 100%; max-width: 900px; }
+        
+        /* Profile Section */
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; background: #2c3e50; border: 3px solid var(--accent); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .sidebar h1 { font-size: 1.4rem; margin: 10px 0; }
+        .sidebar p { font-size: 0.9rem; color: #bdc3c7; }
+        .social-links { margin-top: 2rem; }
+        .social-links a { color: white; font-size: 1.2rem; margin: 0 10px; text-decoration: none; transition: 0.3s; }
+        .social-links a:hover { color: var(--accent); }
+
+        /* Content Styling */
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; color: var(--sidebar-bg); margin-top: 2rem; }
+        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 1.5rem; }
+        .tag { display: inline-block; background: #e1f0fa; color: #2980b9; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; margin: 5px 3px; font-weight: 600; }
+        .gold-medal { border-left: 4px solid #f1c40f; }
+        .date { font-weight: bold; color: var(--accent); font-size: 0.9rem; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: relative; }
+            .main-content { margin-left: 0; padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="profile-img"><i class="fas fa-user-grad"></i></div>
+        <h1>Md Sagar Hossain</h1>
+        <p>MSc Researcher <br> International Economics & Business</p>
+        <p><i class="fas fa-location-dot"></i> Budapest, Hungary</p>
+        
+        <div class="social-links">
+            <a href="mailto:h.sagar.bpdb@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/mdsagarhossain" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://orcid.org/0009-0009-9438-3869" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <section id="about">
+            <h2>Research Profile</h2>
+            <p>I am an MSc student at the <strong>Budapest University of Economics and Business (BGE)</strong>[cite: 13, 17]. My research focuses on <strong>Global Value Chains (GVCs)</strong>, specifically analyzing the participation and upgrading trajectories of the textile and apparel industries[cite: 8, 46, 47]. I aim to explore the social and environmental costs of value addition beyond traditional financial metrics[cite: 10].</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <span class="date">2024 - Present</span>
+                <h3>MSc in International Economics and Business</h3>
+                <p>Budapest University of Economics and Business, Hungary [cite: 13, 17]<br>
+                GPA: 4.57/5.00 [cite: 16]</p>
+            </div>
+            <div class="card">
+                <span class="date">2016 - 2017</span>
+                <h3>MBA in Accounting and Information Systems</h3>
+                <p>University of Rajshahi, Bangladesh [cite: 22, 27]<br>
+                CGPA: 3.88/4.00 (Ranked 3rd) [cite: 26]</p>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            <div class="card">
+                <strong>Reviewing the Implementation of IPSAS in Bangladesh (2024)</strong>
+                <p><em>International Journal of Advance Research and Innovative Ideas in Education</em>[cite: 67]. Analyzes challenges in adopting international public sector accounting standards[cite: 68].</p>
+            </div>
+            <div class="card">
+                <strong>Civilization Costs Mother Nature (2023)</strong>
+                <p><em>Research Journal of Finance and Accounting</em>[cite: 74]. Examines the legal landscape of environmental accounting in Bangladesh[cite: 71, 75].</p>
+            </div>
+        </section>
+
+        <section id="awards">
+            <h2>Major Honors</h2>
+            <div class="card gold-medal">
+                <h3>Prime Minister Gold Medal</h3>
+                <p>Awarded by the Government of Bangladesh for securing the highest position in the faculty out of 456 students[cite: 161, 163].</p>
+            </div>
+            <div class="card gold-medal">
+                <h3>Bangabandhu-Agrani Bank Gold Medal</h3>
+                <p>Awarded for achieving first place in the Bachelor's program at the University of Rajshahi[cite: 158, 159].</p>
+            </div>
+            <div class="card">
+                <h3>Stipendium Hungaricum Scholarship</h3>
+                <p>Full scholarship awarded by the Hungarian Government for Master's studies (selected as 1 of 94 from 5000 applicants)[cite: 154, 157].</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Methodology & Tools</h2>
+            <div>
+                <span class="tag">Global Value Chain Analysis</span>
+                <span class="tag">OECD TiVA Database</span>
+                <span class="tag">Regression Modeling</span>
+                <span class="tag">Python (Basic)</span>
+                <span class="tag">RStudio (Biblioshiny)</span>
+                <span class="tag">SmartPLS (SEM)</span>
+                <span class="tag">IELTS 7.0 (C1)</span>
+            </div>
+        </section>
+        
+        <p style="text-align: center; margin-top: 4rem; color: #999; font-size: 0.8rem;">
+            &copy; 2026 Md Sagar Hossain | PhD Research Profile
+        </p>
+    </div>
+
+</body>
+</html>
