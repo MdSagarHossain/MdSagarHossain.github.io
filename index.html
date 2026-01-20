@@ -3,118 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Sagar Hossain | PhD Research Profile</title>
+    <title>Md Sagar Hossain | PhD Profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root { --sidebar-bg: #1a252f; --accent: #3498db; --text-main: #333; --bg-light: #f8f9fa; }
         body { font-family: 'Inter', sans-serif; margin: 0; display: flex; background: var(--bg-light); color: var(--text-main); line-height: 1.6; }
+        
+        /* Sidebar stays fixed on the left */
         .sidebar { width: 300px; background: var(--sidebar-bg); color: white; height: 100vh; position: fixed; padding: 2rem; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; }
-        .main-content { margin-left: 300px; padding: 3rem; width: 100%; max-width: 900px; }
-        .profile-img { width: 120px; height: 120px; border-radius: 50%; background: #2c3e50; border: 3px solid var(--accent); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; }
-        .sidebar h1 { font-size: 1.3rem; margin: 10px 0; }
-        .social-links { margin-top: 1.5rem; }
+        .profile-img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); margin-bottom: 1rem; background: #2c3e50; }
+        
+        /* Main Content with standard width for alignment */
+        .main-content { margin-left: 300px; padding: 3rem; width: 100%; max-width: 900px; box-sizing: border-box; }
+        
+        /* Uniform Section Styling */
+        section { margin-bottom: 2.5rem; width: 100%; }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; color: var(--sidebar-bg); margin-top: 0; font-weight: 600; }
+        
+        /* Uniform Card Styling for all sections */
+        .card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 1.2rem; width: 100%; box-sizing: border-box; }
+        .gold { border-left: 5px solid #f1c40f; }
+        
         .social-links a { color: white; font-size: 1.2rem; margin: 0 10px; text-decoration: none; }
-        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; color: var(--sidebar-bg); margin-top: 2rem; }
-        .card { background: white; padding: 1.2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 1rem; }
-        .gold { border-left: 4px solid #f1c40f; }
-        .tag { display: inline-block; background: #e1f0fa; color: #2980b9; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; margin: 3px; font-weight: 600; }
-        @media (max-width: 768px) { body { flex-direction: column; } .sidebar { width: 100%; height: auto; position: relative; } .main-content { margin-left: 0; padding: 1.5rem; } }
-        .download-btn {
-            display: inline-block;
-            background: var(--accent);
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 600;
-            margin-top: 1.5rem;
-            transition: 0.3s;
+        .download-btn { display: inline-block; background: var(--accent); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: 600; margin-top: 1.5rem; transition: 0.3s; }
+        
+        /* Responsive for Mobile */
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: relative; }
+            .main-content { margin-left: 0; padding: 1.5rem; max-width: 100%; }
         }
-        .download-btn:hover {
-            background: #2980b9;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-    </style>.
+    </style>
 </head>
 <body>
     <div class="sidebar">
-        <img src="DSC_26231.JPG" alt="Md Sagar Hossain" class="profile-img">
+        <img src="profile.jpg" alt="Md Sagar Hossain" class="profile-img">
         <h1>Md Sagar Hossain</h1>
-        <p>MSc Researcher <br> BGE, Hungary</p>
+        <p>GVC Researcher <br> MSc at BGE, Hungary </p>
+        <p>BBA & MBA, AIS <br> University of Rajshahi, Bangladesh </p>
         <div class="social-links">
             <a href="mailto:h.sagar.bpdb@gmail.com"><i class="fas fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/mdsagarhossain"><i class="fab fa-linkedin"></i></a>
-        <a href="CV of Md Sagar Hossain.pdf" class="download-btn" download>
+        </div>
+        <a href="CV_of_Md_Sagar_Hossain.pdf" class="download-btn" download>
             <i class="fas fa-file-download"></i> Download CV
         </a>
-        </div>
     </div>
+
     <div class="main-content">
-        <section>
+        <section id="profile">
             <h2>Academic Profile</h2>
-            <p>I am an MSc student in <strong>International Economics and Business</strong> specializing in <strong>Global Value Chains (GVCs)</strong>. My current research focuses on the textile and apparel industries of Bangladesh.</p>
+            <div class="card">
+                <p>I am an MSc student in <strong>International Economics and Business</strong> specializing in <strong>Global Value Chains (GVCs)</strong>[cite: 7, 8]. My current research focuses on the quantitative analysis of participation and upgrading trajectories within the textile and apparel industries of Bangladesh.</p>
+            </div>
         </section>
-        <section>
+
+        <section id="awards">
             <h2>Prestigious Awards</h2>
             <div class="card gold">
                 <strong>Prime Minister Gold Medal (2016)</strong>
-                <p>Awarded for securing the highest position in the faculty at the University of Rajshahi.</p>
+                <p>Awarded by the Government of Bangladesh for securing the highest position in the faculty at the University of Rajshahi.</p>
             </div>
             <div class="card gold">
                 <strong>Bangabandhu-Agrani Bank Gold Medal (2023)</strong>
-                <p>Recognized for achieving 1st place in the Bachelor's program.</p>
-            </div>
-            <div class="card">
-                <strong>Stipendium Hungaricum Scholarship</strong>
-                <p>Highly competitive scholarship for Master's studies in Hungary.</p>
+                <p>Recognized for achieving 1st place in the Bachelor's program out of 94 students.</p>
             </div>
         </section>
-        <section>
-            <h2>Education</h2>
+
+        <section id="publications">
+            <h2>Publications</h2>
             <div class="card">
-                <strong>Budapest University of Economics and Business (BGE)</strong>
-                <p>MSc in International Economics and Business (2024-Present) | GPA: 4.57/5.00. </p>
+                <strong>International Public Sector Accounting Standards in Bangladesh (2024)</strong>
+                <p><em>International Journal of Advance Research and Innovative Ideas in Education</em>. Examined adoption challenges, including inconsistent reform and limited resources.</p>
             </div>
             <div class="card">
-                <strong>University of Rajshahi</strong>
-                <p>MBA & BBA in Accounting and Information Systems. Ranked 1st in BBA and 3rd in MBA.</p>
+                <strong>Civilization Costs Mother Nature (2023)</strong>
+                <p><em>Research Journal of Finance and Accounting</em>. Analyzed the conceptual and legal foundations of Environmental Accounting in Bangladesh.</p>
             </div>
         </section>
-        <section>
-            <h2>Technical Skills</h2>
-            <span class="tag">OECD TiVA Database</span> <span class="tag">Regression Modeling</span>
-            <span class="tag">SmartPLS (SEM)</span> <span class="tag">RStudio (Biblioshiny)</span>
-            </span> <span class="tag">VOSviewer</span> 
+
+        <section id="languages">
+            <h2>Languages</h2>
+            <div class="card">
+                <p><strong>Bengali:</strong> Native Proficiency</p>
+                <p><strong>English:</strong> Full Professional Proficiency </p>
+                <ul>
+                    <li>IELTS Score: Overall 7.0 (CEFR C1) </li>
+                    <li>Medium of Instruction for BBA, MBA, and MSc: English </li>
+                </ul>
+            </div>
         </section>
     </div>
 </body>
 </html>
-<section id="publications">
-            <h2>Publications</h2>
-            <div class="card">
-                <strong>Reviewing the Implementation of International Public Sector Accounting Standards in Bangladesh: An Analytical Examination (2024)</strong>
-                <p><em>International Journal of Advance Research and Innovative Ideas in Education</em>. This research highlights the challenges Bangladesh faces in adopting IPSAS, including inconsistent reform efforts and limited resources.</p>
-            </div>
-            <div class="card">
-                <strong>Civilization Costs Mother Nature: Tracing the Conceptual Ideals and Legal Landscape of Environmental Accounting in Bangladesh (2023)</strong>
-                <p><em>Research Journal of Finance and Accounting</em>. This study examines the legal framework and conceptual foundations of Environmental Accounting and Reporting (EAR).</p>
-            </div>
-            <div class="card">
-                <strong>Critical Accounting Theory: Unveiling Power Dynamics and Enhancing Accountability (2023)</strong>
-                <p><em>International Journal of Science and Business</em>. An empirical study on how critical accounting frameworks can unveil power dynamics within organizations.</p>
-            </div>
-        </section>
-</section>
-<section id="languages">
-            <h2>Languages</h2>
-            <div class="card">
-                <p><strong>Bengali:</strong> Native Proficiency</p>
-                <p><strong>English:</strong> Full Professional Proficiency</p>
-                <ul>
-                    <li><strong>IELTS Score:</strong> Overall 7.0 (NBLT 6.0)</li>
-                    <li><strong>CEFR Level:</strong> C1</li>
-                    <li><strong>Medium of Instruction:</strong> All previous degrees (BBA, MBA, MSc) completed in English</li>
-                </ul>
-            </div>
-        </section>
