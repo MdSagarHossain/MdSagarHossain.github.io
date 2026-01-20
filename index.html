@@ -11,11 +11,16 @@
         body { font-family: 'Inter', sans-serif; margin: 0; display: flex; background: var(--bg-light); color: var(--text-main); line-height: 1.6; }
         
         /* Sidebar stays fixed on the left */
-        .sidebar { width: 300px; background: var(--sidebar-bg); color: white; height: 100vh; position: fixed; padding: 2rem; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .sidebar { width: 330px; background: var(--sidebar-bg); color: white; height: 100vh; position: fixed; padding: 2rem; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; }
         .profile-img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); margin-bottom: 1rem; background: #2c3e50; }
+        .sidebar h1 { 
+    font-size: 1.5rem; 
+    margin: 15px 0 5px 0; 
+    white-space: nowrap; /* This prevents the name from breaking into two lines */
+    font-weight: 600;}
         
         /* Main Content with standard width for alignment */
-        .main-content { margin-left: 300px; padding: 3rem; width: 100%; max-width: 900px; box-sizing: border-box; }
+        .main-content { margin-left: 330px; padding: 3rem; width: 100%; max-width: 900px; box-sizing: border-box; }
         
         /* Uniform Section Styling */
         section { margin-bottom: 2.5rem; width: 100%; }
