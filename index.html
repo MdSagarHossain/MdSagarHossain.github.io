@@ -39,6 +39,41 @@
             .sidebar { width: 100%; height: auto; position: relative; }
             .main-content { margin-left: 0; padding: 1.5rem; max-width: 100%; }
         }
+        /* Style for the clickable heading */
+        .accordion-header {
+            background-color: white;
+            color: var(--sidebar-bg);
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-bottom: 2px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-header:after {
+            content: '\002B'; /* Plus sign (+) */
+            font-size: 1.5rem;
+        }
+
+        .active:after {
+            content: "\2212"; /* Minus sign (-) */
+        }
+
+        /* Style for the hidden content */
+        .accordion-content {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
     </style>
 </head>
 <body>
@@ -65,8 +100,8 @@
         </section>
 
         <section id="awards">
-            <h2>Prestigious Awards</h2>
-            <div class="card gold">
+            <button class="accordion-header">Prestigious Awards</button>
+            <div class="accordion-content">
                 <strong>Prime Minister Gold Medal (2016)</strong>
                 <p>Awarded by the Government of Bangladesh for securing the highest position in the faculty at the University of Rajshahi.</p>
             </div>
@@ -77,20 +112,20 @@
         </section>
 
         <section id="publications">
-            <h2>Publications</h2>
-            <div class="card">
+            <button class="accordion-header">Publications</h2>
+            <div class="accordion-content">
                 <strong>International Public Sector Accounting Standards in Bangladesh (2024)</strong>
                 <p><em>International Journal of Advance Research and Innovative Ideas in Education</em>. Examined adoption challenges, including inconsistent reform and limited resources.</p>
             </div>
-            <div class="card">
+            <div class="accordion-content">
                 <strong>Civilization Costs Mother Nature (2023)</strong>
                 <p><em>Research Journal of Finance and Accounting</em>. Analyzed the conceptual and legal foundations of Environmental Accounting in Bangladesh.</p>
             </div>
         </section>
 
         <section id="languages">
-            <h2>Languages</h2>
-            <div class="card">
+            <button class="accordion-header">Languages</h2>
+            <div class="accordion-content">
                 <p><strong>Bengali:</strong> Native Proficiency</p>
                 <p><strong>English:</strong> Full Professional Proficiency </p>
                 <ul>
